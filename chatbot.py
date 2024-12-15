@@ -100,9 +100,9 @@ def main():
         st.title("TRỢ LÝ NHÀ HÀNG MIDTOWN\n ASSISTANT RESTAURANT")
 
     st.markdown("""
-    Chào mừng bạn đến với trợ lý ảo của nhà hàng Midtown!\n
+    Chào mừng bạn đến với trợ lý ảo của nhà hàng Midtown! (Welcome to the Midtown restaurant virtual assistant!)\n
                  
-    Tôi có thể giúp bạn tìm hiểu về menu, đặt bàn và trả lời mọi thắc mắc về nhà hàng.
+    Tôi có thể giúp bạn tìm hiểu về menu, đặt bàn và trả lời mọi thắc mắc về nhà hàng. (I can help you learn about the menu, book a table and answer any questions about the restaurant.)
     """)
     
    
