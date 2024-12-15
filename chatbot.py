@@ -159,11 +159,11 @@ def main():
             # Hiển thị hình ảnh trong grid layout
             col1, col2 = st.columns(2)
             with col1:
-                st.image("restaurant1.jpg", caption="Không gian nhà hàng", use_container_width=True)
-                st.image("restaurant3.jpg", caption="Khu vực sân vườn", use_container_width=True)
+                st.image("restaurant1.jpg", caption="Khu vực sân vườn", use_container_width=True)
+                st.image("restaurant3.jpg", caption="Không gian trong nhà", use_container_width=True)
             with col2:
-                st.image("restaurant2.jpg", caption="Món ăn đặc sắc", use_container_width=True)
-                st.image("restaurant4.jpg", caption="Không gian trong nhà", use_container_width=True)
+                st.image("restaurant2.jpg", caption="Không gian ngoài trời", use_container_width=True)
+                st.image("restaurant4.jpg", caption="Cảnh sân vườn", use_container_width=True)
                 
             if st.button("Đóng"):
                 st.session_state.show_about = False
