@@ -2,6 +2,7 @@ import os
 import streamlit as st
 import google.generativeai as genai
 from dotenv import load_dotenv
+import webbrowser
 from history import INITIAL_CHAT_HISTORY
 
 # Configure the page
@@ -87,6 +88,8 @@ MIDTOWN RESTAURANT\n
 \n
 Liên hệ: Ánh Nguyễn (0344135008)
 """
+# Thay đổi để sử dụng link trực tiếp
+MAPS_LINK = "https://maps.app.goo.gl/35fL6oFzKuVM6gJp6"
 
 
 
@@ -112,6 +115,9 @@ def main():
     with st.sidebar:
         st.header("📍 Thông tin nhà hàng")
         st.info(RESTAURANT_INFO)
+        # Thêm nút chỉ đường với link trực tiếp
+        if st.button("🗺️ Xem chỉ đường", use_container_width=True):
+            webbrowser.open_new_tab(MAPS_LINK)
         
         st.header("⏰ Giờ mở cửa")
         st.write("Hàng ngày: 10:00 - 23:00")
