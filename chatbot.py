@@ -12,7 +12,7 @@ st.set_page_config(
 )
 
 # Tải các biến môi trường từ file .env
-api_key = "AIzaSyD46e0-x8djrgxbXxT8iD1dd-hwTMXWvHo"
+api_key = "AIzaSyC6TsnVHQ8S8RDkNmZo-cnIZODJqeA_-Ek"
 genai.configure(api_key=api_key)
 
 
