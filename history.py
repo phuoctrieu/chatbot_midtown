@@ -78,12 +78,7 @@ INITIAL_CHAT_HISTORY = [
         "Số điện thoại chủ quán: Ánh Nguyễn (0344135008)",
       ],
     },
-    {
-      "role": "model",
-      "parts": [
-        files[0],
-      ],
-    },
+
     {
       "role": "user",
       "parts": [
