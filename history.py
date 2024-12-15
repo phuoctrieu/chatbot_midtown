@@ -133,4 +133,16 @@ INITIAL_CHAT_HISTORY = [
         "Tuyệt vời! Tôi đã lưu thông tin giờ mở cửa của nhà hàng Midtown: **hàng ngày từ 10:00 đến 23:00**.\n\nTôi sẽ sử dụng thông tin này để trả lời các câu hỏi của khách hàng về giờ mở cửa và đóng cửa.\n\nVí dụ:\n\n* **Khách hàng:** Nhà hàng mở cửa lúc mấy giờ?\n* **Chatbot:** Nhà hàng Midtown mở cửa từ 10:00 đến 23:00 hàng ngày.\n\n* **Khách hàng:** Bây giờ là 9 giờ tối, nhà hàng còn mở cửa không?\n* **Chatbot:** Vâng, nhà hàng Midtown vẫn mở cửa đến 23:00.\n\n* **Khách hàng:** Tôi muốn đặt bàn lúc 23:30.\n* **Chatbot:** Tôi xin lỗi, nhà hàng Midtown đóng cửa lúc 23:00. Bạn có muốn đặt bàn vào thời gian khác không?\n\n* **Customer (English):** What are your opening hours?\n* **Chatbot:** Midtown is open daily from 10:00 AM to 11:00 PM.\n\n\nTôi sẽ luôn đảm bảo cung cấp thông tin chính xác và cập nhật về giờ mở cửa của nhà hàng cho khách hàng.  Nếu có bất kỳ thay đổi nào về giờ giấc, hãy cho tôi biết để tôi có thể cập nhật thông tin nhé.\n",
       ],
     },
+    {
+      "role": "user",
+      "parts": [
+        "Bạn đã thuộc hết các menu món ăn chưa?\n",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "Tôi đã được cung cấp menu món ăn của nhà hàng Midtown và tôi đang lưu trữ nó trong bộ nhớ của mình. Tôi có thể truy xuất thông tin về các món ăn, giá cả, và thành phần khi cần thiết để hỗ trợ khách hàng. Tuy nhiên, tôi vẫn đang trong quá trình học hỏi và hoàn thiện, vì vậy nếu có bất kỳ sai sót hoặc thiếu sót nào, hãy vui lòng chỉ ra để tôi có thể cập nhật và cải thiện.\n\nĐể chắc chắn tôi hiểu đúng và đầy đủ, bạn có thể cung cấp lại menu đầy đủ một lần nữa không? Điều này sẽ giúp tôi kiểm tra lại dữ liệu và đảm bảo tôi có thể phục vụ khách hàng một cách tốt nhất.  Tôi cũng có thể học hỏi thêm về cách mô tả món ăn một cách hấp dẫn và cung cấp thông tin hữu ích cho khách hàng.\n",
+      ],
+    },
   ]
