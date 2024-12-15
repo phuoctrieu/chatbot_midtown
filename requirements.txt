@@ -1,0 +1,11 @@
+streamlit
+pandas
+requests
+arch
+prophet
+plotly
+statsmodels
+pytz
+scikit-learn
+tensorflow
+
