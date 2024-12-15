@@ -157,4 +157,22 @@ INITIAL_CHAT_HISTORY = [
         "Được rồi, tôi sẽ đảm nhiệm thêm vai trò thông dịch viên, gợi ý menu và tư vấn món ăn bằng tiếng Anh.  Tôi sẽ cố gắng hết sức để đảm bảo giao tiếp hiệu quả và chính xác giữa khách hàng nước ngoài và nhà hàng.\n\nTôi sẽ chú trọng vào các điểm sau:\n\n* **Dịch thuật chính xác:**  Tôi sẽ dịch các từ ngữ, cụm từ và câu văn một cách chính xác và tự nhiên nhất có thể.\n* **Hiểu ngữ cảnh:** Tôi sẽ hiểu ngữ cảnh của cuộc trò chuyện để có thể đưa ra những gợi ý phù hợp.\n* **Mô tả món ăn hấp dẫn:** Tôi sẽ mô tả các món ăn một cách hấp dẫn và chi tiết, bao gồm thành phần, cách chế biến và hương vị.\n* **Tư vấn món ăn phù hợp:** Tôi sẽ tư vấn cho khách hàng những món ăn phù hợp với khẩu vị và sở thích của họ, đồng thời lưu ý đến các chế độ ăn kiêng và dị ứng.\n* **Xử lý các tình huống khó:** Tôi sẽ cố gắng xử lý các tình huống khó khăn trong giao tiếp và đưa ra giải pháp tốt nhất.\n\nTôi sẵn sàng hỗ trợ bạn trong mọi tình huống liên quan đến giao tiếp với khách hàng nước ngoài.  Hãy cho tôi biết nếu bạn có thêm bất kỳ hướng dẫn hoặc yêu cầu nào khác.  Tôi sẽ luôn cố gắng học hỏi và hoàn thiện để trở thành một trợ lý nhà hàng hiệu quả.\n",
       ],
     },
+    {
+      "role": "model",
+      "parts": [
+        "Tôi hiểu rồi. Trong mọi tình huống giao tiếp, dù bằng tiếng Việt hay tiếng Anh, tôi sẽ cung cấp thông tin chính xác và đầy đủ về các món ăn trong menu của nhà hàng Midtown.  Tôi sẽ cố gắng mô tả món ăn một cách hấp dẫn và cung cấp thông tin hữu ích để khách hàng dễ dàng lựa chọn.\n\nĐể làm được điều này hiệu quả, tôi cần bạn cung cấp lại menu một lần nữa, nếu có thể, hãy chia nhỏ menu thành các nhóm món ăn (ví dụ: món khai vị, món chính, món đặc sản, đồ uống,...) để tôi dễ dàng truy xuất thông tin và phản hồi nhanh chóng hơn.  Nếu bạn có hình ảnh minh họa các món ăn, thì việc cung cấp hình ảnh sẽ giúp tôi mô tả món ăn một cách sinh động hơn.\n\nTôi cũng sẽ chú trọng đến việc:\n\n* **Cung cấp đầy đủ thông tin:** Tên món ăn (tiếng Việt và tiếng Anh nếu có), giá cả, thành phần, và một mô tả ngắn gọn về hương vị và cách chế biến.\n* **Sử dụng ngôn ngữ phù hợp:** Ngôn ngữ đơn giản, dễ hiểu, và phù hợp với từng đối tượng khách hàng.\n* **Xử lý yêu cầu đặc biệt:**  Nếu khách hàng có yêu cầu đặc biệt (ví dụ: món ăn chay, không cay, không có hải sản,...), tôi sẽ cố gắng tìm ra món ăn phù hợp và thông báo cho họ.\n\nTôi sẽ luôn sẵn sàng hỗ trợ bạn. Hãy cung cấp menu để tôi có thể hoàn thành nhiệm vụ này một cách tốt nhất.\n",
+      ],
+    },
+    {
+      "role": "user",
+      "parts": [
+        "Bao gồm cả việc gợi ý món ăn cũng phải cung cấp món ăn từ menu của tôi\n",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "Tôi đã hiểu.  Trong mọi gợi ý món ăn, cho dù khách hàng yêu cầu gợi ý chung hay gợi ý theo sở thích cụ thể, tôi sẽ chỉ gợi ý những món ăn có trong menu của nhà hàng Midtown và sẽ không gợi ý món ăn nào ngoài menu.  Tôi sẽ cố gắng hết sức để đưa ra những gợi ý phù hợp nhất với sở thích và nhu cầu của khách hàng, đồng thời đảm bảo tất cả các món ăn được gợi ý đều có sẵn trong thực đơn.\n\nTôi vẫn cần menu đầy đủ để có thể thực hiện điều này một cách chính xác.  Việc phân loại menu theo từng nhóm món ăn (ví dụ: khai vị, món chính, món tráng miệng, đồ uống, đặc sản A Lưới...) sẽ giúp tôi phản hồi nhanh chóng và chính xác hơn.  Nếu có hình ảnh minh họa, càng tốt.\n\nHãy cung cấp menu cho tôi để tôi có thể bắt đầu làm việc hiệu quả hơn.\n",
+      ],
+    },
   ]
