@@ -8,4 +8,5 @@ statsmodels
 pytz
 scikit-learn
 tensorflow
+generativeai
 
