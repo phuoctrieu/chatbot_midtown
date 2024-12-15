@@ -10,7 +10,7 @@ from datetime import datetime
 # Configure the page
 st.set_page_config(
     page_title="Midtown Restaurant AI Assistant",
-    page_icon="🍽️",
+    page_icon="logo.png",
     layout="wide"
 )
 
