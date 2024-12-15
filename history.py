@@ -223,4 +223,16 @@ INITIAL_CHAT_HISTORY = [
         "Lươn um chuối có giá 80.000 VNĐ.\n",
       ],
     },
+    {
+      "role": "user",
+      "parts": [
+        "Nếu khách hàng có như cầu đặt hàng: hãy tạo biểu mẫu để khách hàng nhập, biểu mẫu gồm:\nMón ăn:\nSố lượng món:\nThời gian đến quán:",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "Okay, here are a few options for collecting order information from customers, presented in a way suitable for different communication channels:\n\n**Option 1: Simple Text-Based Form (Suitable for simple chatbots or text messages)**\n\nTo place an order, please provide the following information:\n\n* **Món ăn:** (Name of the dish)\n* **Số lượng món:** (Quantity)\n* **Thời gian đến quán:** (Time of arrival)\n\n\n**Option 2:  Slightly more structured form (Better for clarity)**\n\nPlease provide the following details to place your order:\n\n1. **Món ăn:** [Khách hàng nhập tên món ăn]\n2. **Số lượng món:** [Khách hàng nhập số lượng]\n3. **Thời gian đến quán:** [Khách hàng nhập thời gian, ví dụ: 7 PM, 19:00, 7 giờ tối]\n\n\n**Option 3:  Form with Error Handling (More advanced, requires programming)**\n\nThis option would require a more sophisticated chatbot system with error handling capabilities:\n\n* **Món ăn:** (Please enter the name of the dish.  If the dish is not on our menu, I will let you know.)\n* **Số lượng món:** (Please enter a number.  Only numerical values are accepted.)\n* **Thời gian đến quán:** (Please specify the time you will arrive. Use a format like HH:MM or a time description, e.g., 7 PM).\n\n\n**Option 4:  Using numbered lists for clarity (Simple but effective):**\n\nĐể đặt món, vui lòng cho biết:\n\n1. Tên món ăn:\n2. Số lượng:\n3. Thời gian đến quán:\n\n\nRemember that these forms need to be integrated into a chatbot system that can collect and process the data.  I, as a large language model, can't directly collect and store this information.  You'll need to use a platform like Dialogflow, Rasa, or a similar chatbot building tool to implement these forms and handle the order processing.  The platform will then allow you to access and manage the order information.\n",
+      ],
+    },
   ]
