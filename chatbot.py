@@ -132,8 +132,7 @@ def display_order_form():
         time_label = "Giờ giao hàng/Time to deliver"
     delivery_time = st.time_input(time_label)
     
-    # In ra để debug
-    st.write(f"Debug - delivery_method: {delivery_method}")
+    
     
     # Địa chỉ ship nếu chọn mang về
     if delivery_method == "Mang về/Take away":
