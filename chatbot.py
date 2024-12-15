@@ -116,8 +116,7 @@ def main():
         st.header("📍 Thông tin nhà hàng")
         st.info(RESTAURANT_INFO)
         # Thêm nút chỉ đường với link trực tiếp
-        if st.button("🗺️ Xem chỉ đường", use_container_width=True):
-            webbrowser.open_new_tab(MAPS_LINK)
+         st.link_button("🗺️ Xem chỉ đường", MAPS_LINK, use_container_width=True)
         
         st.header("⏰ Giờ mở cửa")
         st.write("Hàng ngày: 10:00 - 23:00")
