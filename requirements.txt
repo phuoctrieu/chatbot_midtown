@@ -1,10 +1,5 @@
 streamlit
 requests
-arch
-prophet
-plotly
-statsmodels
-pytz
-scikit-learn
+python-dotenv
 google-generativeai
 
