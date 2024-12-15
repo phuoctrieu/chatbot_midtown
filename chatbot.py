@@ -66,7 +66,7 @@ def display_chat_interface():
             st.write(message["parts"])
 
     # Chat input
-    if prompt := st.chat_input("Nhập tin nhắn của bạn.../ Ask your questions ..."):
+    if prompt := st.chat_input("Nhập tin nhắn của bạn... (Ask your questions ...)"):
         # Add user message to chat
         st.chat_message("user").write(prompt)
         st.session_state.messages.append({"role": "user", "parts": prompt})
@@ -97,7 +97,7 @@ def main():
     with col1:
         st.image("logo.png", width=100)  # Adjust width as needed
     with col2:
-        st.title("TRỢ LÝ NHÀ HÀNG MIDTOWN (Assistant Restaurant)")
+        st.title("TRỢ LÝ NHÀ HÀNG MIDTOWN\n(Assistant Restaurant)")
 
     st.markdown("""
     Chào mừng bạn đến với trợ lý ảo của nhà hàng Midtown!\n
