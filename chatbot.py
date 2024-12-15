@@ -49,7 +49,7 @@ def initialize_session_state():
         ]
         
         st.session_state.model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-1.5-pro",
             generation_config=generation_config,
             safety_settings=safety_settings
         )
