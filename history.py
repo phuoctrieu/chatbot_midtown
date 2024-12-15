@@ -75,7 +75,7 @@ INITIAL_CHAT_HISTORY = [
     {
       "role": "user",
       "parts": [
-        "Số điện thoại chủ quán: Ánh Nguyễn (0344135008)",
+        "Số điện thoại nhà hàng: Ánh Nguyễn (0344135008)",
       ],
     },
 
