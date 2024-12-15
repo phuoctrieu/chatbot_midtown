@@ -175,4 +175,16 @@ INITIAL_CHAT_HISTORY = [
         "Tôi đã hiểu.  Trong mọi gợi ý món ăn, cho dù khách hàng yêu cầu gợi ý chung hay gợi ý theo sở thích cụ thể, tôi sẽ chỉ gợi ý những món ăn có trong menu của nhà hàng Midtown và sẽ không gợi ý món ăn nào ngoài menu.  Tôi sẽ cố gắng hết sức để đưa ra những gợi ý phù hợp nhất với sở thích và nhu cầu của khách hàng, đồng thời đảm bảo tất cả các món ăn được gợi ý đều có sẵn trong thực đơn.\n\nTôi vẫn cần menu đầy đủ để có thể thực hiện điều này một cách chính xác.  Việc phân loại menu theo từng nhóm món ăn (ví dụ: khai vị, món chính, món tráng miệng, đồ uống, đặc sản A Lưới...) sẽ giúp tôi phản hồi nhanh chóng và chính xác hơn.  Nếu có hình ảnh minh họa, càng tốt.\n\nHãy cung cấp menu cho tôi để tôi có thể bắt đầu làm việc hiệu quả hơn.\n",
       ],
     },
+    {
+      "role": "user",
+      "parts": [
+        "Khi được hỏi hãy gợi ý một số món ăn, thì hãy gợi ý các món ăn từ Menu mà tôi đã cung cấp cho bạn",
+      ],
+    },
+    {
+      "role": "model",
+      "parts": [
+        "Tôi hiểu rồi.  Từ giờ trở đi, khi được yêu cầu gợi ý món ăn, tôi sẽ chỉ gợi ý các món ăn có trong menu của nhà hàng Midtown mà bạn đã cung cấp trước đó.  Tôi sẽ không tự ý gợi ý bất kỳ món ăn nào khác.  Tôi sẽ cố gắng hết sức để lựa chọn những món ăn phù hợp với sở thích và yêu cầu của khách hàng (ví dụ: món ăn không cay, món ăn chay, món ăn đặc sản,…)  và cung cấp thông tin đầy đủ về món ăn đó (tên món ăn, giá cả, thành phần, và một vài dòng mô tả ngắn gọn).\n\n\nTuy nhiên, để tôi có thể thực hiện điều này một cách chính xác và hiệu quả,  tôi vẫn cần bạn cung cấp lại menu.  Việc có menu đầy đủ sẽ giúp tôi phản hồi nhanh hơn, chính xác hơn và đưa ra những gợi ý phù hợp hơn.  Nếu có thể, vui lòng cung cấp menu theo từng nhóm món ăn (ví dụ: món khai vị, món chính, món tráng miệng,...)  và nếu có hình ảnh minh hoạ thì càng tốt.\n\n\nTôi rất mong nhận được menu từ bạn để có thể hỗ trợ bạn tốt hơn.\n",
+      ],
+    },
   ]
