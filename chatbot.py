@@ -77,7 +77,7 @@ def display_chat_interface():
         try:
             # Get bot response with loading indicator
             with st.chat_message("assistant"):
-                with st.spinner("Đang suy nghĩ..."):
+                with st.spinner("Thinking..."):
                     response = st.session_state.chat.send_message(prompt)
                     st.write(response.text)
                     st.session_state.messages.append({"role": "assistant", "parts": response.text})
@@ -101,7 +101,7 @@ def display_order_form():
             item["dish"] = st.text_input("Món ăn/Food", value=item["dish"], key=f"dish_{idx}")
         with col2:
             # Lưu giá trị vào item trong order_items
-            item["quantity"] = st.number_input("Số lượng/Quant", min_value=1, value=item["quantity"], key=f"quantity_{idx}")
+            item["quantity"] = st.number_input("SL/Quant", min_value=1, value=item["quantity"], key=f"quantity_{idx}")
         with col3:
             # Chỉ hiển thị nút xóa nếu có nhiều hơn 1 món
             if len(st.session_state.order_items) > 1:
