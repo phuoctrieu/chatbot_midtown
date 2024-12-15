@@ -119,7 +119,7 @@ def main():
         st.link_button("🗺️ Xem chỉ đường (Directions)", MAPS_LINK, use_container_width=True)
         
         st.header("⏰ Giờ mở cửa")
-        st.write("Hàng ngày: 10:00 (open) - 23:00 (close)")
+        st.write("Hàng ngày: 10:00 (open) - 23:00 (closed)")
         
         st.header("🔄 Điều khiển (Control)")
         col1, col2 = st.columns(2)
