@@ -97,7 +97,7 @@ def main():
     with col1:
         st.image("logo.png", width=100)  # Adjust width as needed
     with col2:
-        st.title("TRỢ LÝ NHÀ HÀNG MIDTOWN\n(Assistant Restaurant)")
+        st.title("TRỢ LÝ NHÀ HÀNG MIDTOWN\n ASSISTANT RESTAURANT")
 
     st.markdown("""
     Chào mừng bạn đến với trợ lý ảo của nhà hàng Midtown!\n
