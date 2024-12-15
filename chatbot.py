@@ -19,7 +19,7 @@ genai.configure(api_key=api_key)
 
 def initialize_session_state():
     if "messages" not in st.session_state:
-        st.session_state.messages = []
+        st.session_state.messages = INITIAL_CHAT_HISTORY
     
     if "model" not in st.session_state:
         generation_config = {
