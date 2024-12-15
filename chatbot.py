@@ -101,7 +101,7 @@ def display_order_form():
             item["dish"] = st.text_input("Món ăn/Food", value=item["dish"], key=f"dish_{idx}")
         with col2:
             # Lưu giá trị vào item trong order_items
-            item["quantity"] = st.number_input("Số lượng/Quantity", min_value=1, value=item["quantity"], key=f"quantity_{idx}")
+            item["quantity"] = st.number_input("Số lượng/Quant", min_value=1, value=item["quantity"], key=f"quantity_{idx}")
         with col3:
             # Chỉ hiển thị nút xóa nếu có nhiều hơn 1 món
             if len(st.session_state.order_items) > 1:
