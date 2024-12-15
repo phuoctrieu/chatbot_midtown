@@ -77,7 +77,7 @@ def display_chat_interface():
         try:
             # Get bot response with loading indicator
             with st.chat_message("assistant"):
-                with st.spinner("Thinking..."):
+                with st.spinner("Đang suy nghĩ..."):
                     response = st.session_state.chat.send_message(prompt)
                     st.write(response.text)
                     st.session_state.messages.append({"role": "assistant", "parts": response.text})
@@ -125,11 +125,18 @@ def display_order_form():
     )
     
     # Thời gian đến/giao hàng
-    time_label = "Giờ đến/Time to arrive" if delivery_method == "Ăn tại nhà hàng" else "Giờ giao hàng/Time to deliver"
+    time_label = "Giờ đến/Time to arrive" 
+    if delivery_method == "Ăn tại nhà hàng/Eat in":
+        time_label = "Giờ đến/Time to arrive"
+    else:
+        time_label = "Giờ giao hàng/Time to deliver"
     delivery_time = st.time_input(time_label)
     
+    # In ra để debug
+    st.write(f"Debug - delivery_method: {delivery_method}")
+    
     # Địa chỉ ship nếu chọn mang về
-    if delivery_method == "Mang về":
+    if delivery_method == "Mang về/Take away":
         shipping_address = st.text_area("Địa chỉ giao hàng/Delivery address")
     
     # Thông tin người đặt
@@ -191,7 +198,7 @@ def display_order_form():
             order_summary += "🚚 Phương thức:\n    " + delivery_method + "\n\n"
             order_summary += "⏰ Thời gian:\n    " + delivery_time.strftime('%H:%M') + "\n\n"
             
-            if delivery_method == "Mang về":
+            if delivery_method == "Mang về/Take away":
                 order_summary += f"📍 Địa chỉ: {shipping_address}\n"
             
             order_summary += "\n🍽️ Các món đã đặt:\n"
@@ -231,15 +238,17 @@ def main():
     with col1:
         st.image("logo.png", width=100)
     with col2:
-        st.title("TRỢ LÝ NHÀ HÀNG MIDTOWN\n ASSISTANT RESTAURANT")
+        st.markdown("<h1 style='color: #235952;'>TRỢ LÝ NHÀ HÀNG MIDTOWN<br>ASSISTANT RESTAURANT</h1>", unsafe_allow_html=True)
 
     st.markdown("""
-    Chào mừng bạn đến với trợ lý ảo của nhà hàng Midtown! \n
-                 
-    Chúng tôi có thể giúp bạn tìm hiểu về menu, đặt bàn và trả lời mọi thắc mắc về nhà hàng. \n
+    <div style='color: #6482AD;'>
+    Chào mừng bạn đến với trợ lý ảo của nhà hàng Midtown!\n
+    Chúng tôi có thể giúp bạn tìm hiểu về menu, đặt bàn và trả lời mọi thắc mắc về nhà hàng.
+    <br><br><br>
     Welcome to the Midtown restaurant virtual assistant!\n
-    We can help you learn about the menu, book a table and answer any questions about the restaurant.
-    """)
+    We can help you learn about the menu, book a table and answer any questions about the restaurant.\n
+    </div>
+    """, unsafe_allow_html=True)
 
     # Thêm CSS cho màu nền
     st.markdown("""
@@ -282,7 +291,7 @@ def main():
                 margin: 10px;
             ">
         """, unsafe_allow_html=True)
-        st.subheader("📝 Đặt món/ Order")
+        st.subheader("📝 Đặt món/ Order food")
         display_order_form()
         st.markdown("</div>", unsafe_allow_html=True)
 
