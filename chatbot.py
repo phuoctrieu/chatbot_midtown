@@ -282,7 +282,7 @@ def main():
                 margin: 10px;
             ">
         """, unsafe_allow_html=True)
-        st.subheader("📝 Đặt món")
+        st.subheader("📝 Đặt món/ Order")
         display_order_form()
         st.markdown("</div>", unsafe_allow_html=True)
 
