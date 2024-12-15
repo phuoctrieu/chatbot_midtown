@@ -276,7 +276,7 @@ def main():
                 margin: 10px;
             ">
         """, unsafe_allow_html=True)
-        st.subheader("💬 Trò chuyện với trợ lý")
+        st.subheader("💬 Trò chuyện với trợ lý - Chat with assistant")
         initialize_session_state()
         display_chat_interface()
         st.markdown("</div>", unsafe_allow_html=True)
